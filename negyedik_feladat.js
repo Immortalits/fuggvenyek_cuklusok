@@ -1,10 +1,11 @@
-const nums = ['a', 4, 2, 2, 1, 1];
+const nums = ['1', 4, 2, 2, 1, 1];
 
 let sum = 0;
 
 // deklaráljuk a fuggveny4 függvényt
 function fuggveny4() {
   for (let i = 0; i < nums.length; i++) {
+    const convertedNum = parseInt(nums[i]);
     // vizsgáljuk a nums[i] típusát, hogy szám vagy egyéb...
     if ((typeof nums[i]) !== 'number') {
       // ha nem szám, kiírjuk konzolra, hogy melyik elem nem az
